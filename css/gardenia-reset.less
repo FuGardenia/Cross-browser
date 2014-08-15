@@ -1,0 +1,87 @@
+/*
+*	浏览器默认样式重置 reset css
+*	author:		FuYin
+*	homepage:	http://weibo.com/fugardenia
+*	E-mail:		fooying#qq.com
+*	version:	
+**/
+/*差异设置*/
+/*=========================================*/
+/*盒子模型
+*	W3C模型 
+*	IE模型
+*	
+*	加入DOCTYPE标准所有浏览器就会依据W3C标准去理解盒子。
+*/
+
+
+/*页边距 body
+*	通过body的margin属性设置。margin:10px; padding:0px;
+*	IE<8默认为10px，IE>8默认8px
+*	FF默认为8px
+*	chrome默认为8px
+*	要清除页边距，一般应同时清除这两个属性值：
+*	html默认值均为0.
+*/
+body{
+padding:0; /* 清除非IE浏览器页边距 */
+margin:0; /* 清除IE浏览器页边距 */
+border: 0;
+}
+
+
+/*段间距
+*	IE默认为10px，通过p的margin-top、margin-bottom属性设置。
+*	FF默认为1.12em，通过p的margin-top、margin-bottom属性设置。
+*	P元素默认为块状显示，要清除段间距，一般可以设置：
+*
+*	一行文字firfox默认高度是20，其他为18    ？？？？？？
+*/
+p{
+margin-top:0; /* 清除上边界 */
+margin-bottom:0; /* 清除下边界 */
+}
+
+/*列表样式
+*IE默认为左缩进40px,通过ul、ol的margin属性设置
+*FF默认为左缩进40px，通过劜、ol的padding属性设置
+*dl无缩进
+*dd默认缩进40px
+*/
+ul,ol,dd{
+	list-style-type: none; /*清除列表样式符号*/
+	margin-left: 0; /*清除IE*/
+	padding-left: 0; /*清除非IE*/
+}
+/*图片链接样式
+*	IE默认为 紫色 2像素的边框线。
+* 　FF默认为 蓝色 2像素的边框线。
+*	要清除图片链接样式，一般可以设置：
+*????
+*/
+img{
+	border:0;
+}
+
+
+/*默认修改*/
+/*======================================*/
+/*
+*清除a下划线
+*/
+a{
+text-decoration:none;
+}
+
+/*其他不同的样式*/
+/*======================================*/
+
+/*鼠标样式
+*	IE默认为cursor:hand;。
+*	FF默认为cursor:pointer;。该声明在IE中也有效。
+*/
+
+/*元素居中
+*　	IE默认为text-align:center;。
+*　	FF默认为margin-left:auto;margin-right:auto;。
+*/

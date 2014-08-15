@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+ 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <style type="text/css">
+  *{
+  	margin: 0;
+  	padding:0;
+  }
+  p{
+margin-top:0px; /* 清除上边界 */
+margin-bottom:0px; /* 清除下边界 */
+padding-top: 0px;
+padding-bottom: 0px;
+-webkit-text-size-adjust:none;
+}
+.hezi{
+	display: block;
+	width: 100px;
+	height:100px;
+	padding:10px;
+	border: 10px;
+	border-color: green;
+	background-color: red;
+}
+  </style>
+ </head>
+ <body>
+ 	<div class="hezi">
+ 	</div>
+ 	<img src="http://pic.brushes8.com/uploads/2013/07/17.jpg">
+  <p>12312</p>
+
+  <script type="text/javascript">
+
+  /*var bd = document.getElementsByTagName("body")[0];
+  alert(bd.clientWidth);*/
+  var bd = document.getElementsByTagName("div")[0];
+  alert(bd.width);
+  alert(bd.height);
+  </script>
+ </body>
+</html>
